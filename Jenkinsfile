@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    tools {nodejs "mynodejs"}
+    tools {nodejs "MyNodeJs"}
     environment {
         NODE_ENV= "production"
     }
@@ -13,7 +13,7 @@ pipeline {
                 echo NODE_ENV
                 git 'https://github.com/toshallab/july23jenkin-demo.git'
                 echo " Conte of file "
-                sh 'cat jenkinsdemo.txt'
+                sh 'cat jenkindemo.txt'
             }
         }
         stage ('build') {
