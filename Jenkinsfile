@@ -7,12 +7,12 @@ pipeline {
     stages {
         stage('Dev') {
             environment{
-                NODE_ENV= " devlop"
+                NODE_ENV= " develop"
             }
             steps {
                 echo NODE_ENV
-                git 'https://github.com/toshallab/july23jenkin-demo.git'
-                echo " Conte of file "
+                git 'https://github.com/neetagithub123/jenkingitrepo.git'
+                echo " Content of file "
                 sh 'cat jenkindemo.txt'
             }
         }
